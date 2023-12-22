@@ -9,7 +9,6 @@
 
 `Usage:  GoGrabber.exe  <arg1>`
 
-Upload:
 
 To establish a new webhook, log in to https://public.requestbin.com first.
 
