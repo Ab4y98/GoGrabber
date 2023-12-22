@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <img src="https://i.ibb.co/8X9vrBC/template.png" alt="GitHub Logo" style="width: 200px;"/>
+  <img src="https://i.ibb.co/8X9vrBC/template.png" alt="GoGrabber Logo""/>
 </p>
 
 
