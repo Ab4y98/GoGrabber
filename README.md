@@ -1,12 +1,23 @@
-GoGrabber is tool that grab and collect interesting files.
 
-## Configuration
 
-CLICK HERE and log in to https://public.requestbin.com.
+<p align="center">
+  <img src="https://i.ibb.co/TbfDrZ8/template.png" alt="GitHub Logo" style="width: 200px;"/>
+</p>
 
-Next, set the "webhookUrl" variable in the code to the WebHook's URL.
 
-The files will be uploaded to https://filebin.net by the stealer.
+##  Usage
+`Usage:  GoGrabber.exe  <arg1> `
 
-which will also produce a random 12-string path and a 6-string file name before sending it to the WebHook.
+`[?] GoGrabber.exe -h` 
+`--upload       (uploads the zip file to filebin server.)`
+`--no-upload    (does not uploads the zip file to filebin server.)`
 
+![Alt text](https://i.ibb.co/RytjPyB/2.png)
+
+Upload:
+To establish a new webhook, log in to https://public.requestbin.com first.
+Next, modify the code to point to the WebHook's URL using the `webhook` variable.
+
+![Alt text](https://i.ibb.co/LhyGzZR/1.png)
+
+The grabber will upload the files to a random URL on https://filebin.net and send the contents to the webhook.
