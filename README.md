@@ -20,5 +20,5 @@ The grabber will upload the files to a random URL on https://filebin.net and sen
 
 ##
 
-![Alt text](https://i.ibb.co/RytjPyB/2.png)
+![Alt text](https://i.ibb.co/cYKTqQs/2023-12-22-14-55-24.png)
 
